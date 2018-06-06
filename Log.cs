@@ -29,7 +29,7 @@ namespace ProcessCalc
             Log.CreateDirectoryForLog();
             using (log = new StreamWriter(@logDirectory + logFile, true))
             {
-                log.WriteLine(DateTime.Now + ": Error: " + error);
+                log.WriteLine(DateTime.Now + ":  " + error);
             }
         }
 
@@ -39,7 +39,7 @@ namespace ProcessCalc
             Log.CreateDirectoryForLog();
             using (log = new StreamWriter(@logDirectory + logFile, true))
             {
-                log.WriteLine(DateTime.Now + " : " + "Killed process " + ProcessName + " with ID " + id + "and owner " + owner);
+                log.WriteLine(DateTime.Now + " : " + "Killed process " + ProcessName + " with ID " + id + " and owner " + owner);
             }
         }
 
